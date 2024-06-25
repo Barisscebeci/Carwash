@@ -1,0 +1,22 @@
+.service-card {
+    background-color: #464646; /* Kartın arka plan rengi */
+    color: white; /* Yazı rengi */
+    transition: transform 0.2s ease-in-out; /* Hover efekti için geçiş süresi */
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05); /* Hover efekti: kartı hafifçe büyüt */
+  }
+  
+  .card-content {
+    background-color: #5e3232; /* Kart içeriğinin arka plan rengi */
+  }
+  
+  .service-card .MuiTypography-h4 {
+    color: white; /* Başlık yazı rengi */
+  }
+  
+  .service-card .MuiTypography-body2 {
+    color: white; /* Açıklama yazı rengi */
+  }
+  

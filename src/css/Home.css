@@ -1,0 +1,175 @@
+/* General Styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Tüm ekranı kaplasın */
+  text-align: center;
+}
+
+.resim {
+  width: 100%;
+  max-width: 1000px; /* Maksimum genişliği belirleyin */
+  height: auto;
+}
+
+.parallax {
+  background-image: url('../../public/image/araba.jpg'); /* Yüklediğiniz resim dosyasının yolu */
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content in front of the parallax background */
+.resim-ustu {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.view-services {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #d39b32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+.view-services a {
+  text-decoration: none;
+  color: white;
+}
+
+.hizmetler {
+  padding: 2rem;
+  background-color: #263238;
+  color: white;
+}
+
+.hizmetler-baslik {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.hizmetler h6, .hizmetler h4, .hizmetler subtitle2 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.about-section {
+  padding: 2rem;
+  background-color: #78909c; /* Arka plan rengini ayarladık */
+  color: white; /* Yazı rengini beyaz yaptık */
+}
+
+.about-content {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolonlu grid yapısı */
+  gap: 1rem;
+}
+
+@media (max-width: 992px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); /* Orta boyutlu ekranlar için 2 kolonlu yapı */
+  }
+}
+
+@media (max-width: 600px) {
+  .services-container {
+    grid-template-columns: 1fr; /* Küçük boyutlu ekranlar için tek kolonlu yapı */
+  }
+}
+
+.hakkinda {
+  background-color: #3e2723; /* Arkaplan rengini ayarlayın */
+  padding: 40px; /* Dış boşluk */
+  color: white; /* Yazı rengini beyaz yapın */
+}
+
+.resim-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resimhakkinda {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Görselin köşelerini yuvarlatmak için */
+}
+
+.contact-section {
+  background-color: white;
+}
+
